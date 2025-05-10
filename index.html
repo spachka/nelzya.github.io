@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+    <title>.</title>
+   <meta charset="utf-8">
+    <meta name="description" content="ядурасутулаяаааа,,,">
+</head>
+
+
+
+<body>
+
+
+ <div class="image-container">
+        <img 
+            src="https://i.ibb.co/NgXRS9xS/image.png" 
+            onmouseover="this.src='https://i.ibb.co/My5bBTPG/image.png'" 
+            onmouseout="this.src='https://i.ibb.co/NgXRS9xS/image.png'"
+            alt="конец">
+        <div class="hover-text">я знаю свою вину</div>
+    </div>
+
+
+</body>
+
+<style>
+    body {
+        background-color: #8b00ad;
+    }
+
+     body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .image-container {
+            position: relative;
+            text-align: center;
+        }
+        
+        .hover-text {
+            animation: shake 0.5s infinite;
+            font-family: 'monospace';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            padding: 10px 20px;
+            opacity: 0;
+     
+        }
+
+        .image-container:hover .hover-text {
+            opacity: 1;
+        }
+
+
+        }
+</style>
+
